@@ -2,7 +2,7 @@
 
 namespace App\Core\Console;
 
-use App\Console\Commands\StartCrawlerCommand;
+use App\Core\Console\Commands\StartCrawlerCommand;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel;
 

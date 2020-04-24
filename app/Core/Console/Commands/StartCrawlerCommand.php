@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Console\Commands;
+namespace App\Core\Console\Commands;
 
 use App\Services\BambamCrawler;
 use App\Services\CrawlerService;
@@ -20,7 +20,7 @@ class StartCrawlerCommand extends Command
     {
         if (app(CrawlerService::class)->run($this->argument('name'))) {
             $this->info('BIRRLLLLLLLL!');
-            return true;
+            return "Ok";
         }
 
         $this->error('Ajuda o Maluco Tá Doente!');
